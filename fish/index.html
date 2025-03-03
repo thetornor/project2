@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+    <title>Fish Market</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>  
+  <body>
+    <div class="split left-pane">
+      <div class="centered nav-left">
+        <div class="title">
+          <h1>Today Special</h1>
+        </div>
+        <div class="fishStock">
+            <img src="./images/C-3P.PNG" class="fish" />
+          <img src="./images/F-1P.PNG" class="fish"/>
+          <img src="./images/F-2P.PNG" class="fish"/>
+          <img src="./images/F-3P.PNG" class="fish" />
+          <img src="./images/F-4P.PNG" class="fish" />
+          <img src="./images/F-5P.PNG" class="fish" />
+          <img src="./images/F-6P.PNG" class="fish" />
+          <img src="./images/L-4P.PNG" class="fish" />
+          <img src="./images/O-2P.PNG" class="fish" />
+          <img src="./images/O-8P.PNG" class="fish" />
+          <img src="./images/S-2P.PNG" class="fish" />
+        </div>
+      </div>
+    </div>
+    <div class="split right-pane">
+      <div class="centered nav-right">
+        <div class="input">
+        <input type="text" id="charInput1" maxlength="1" />
+        <input type="text" id="charInput2" maxlength="1" />
+        <button onclick="displayImage()" id="submitButton">placing order</button>
+        </div>
+        <img id="displayedImage" src="" alt="Displayed Image" />
+        <img src="./images/plate.png"  id="plate">
+      </div>
+    </div>
+
+    <script>
+      function displayImage() {
+        const imgElement = document.getElementById("displayedImage");
+
+        //input
+        const input1_letter = document
+          .getElementById("charInput1")
+          .value.toUpperCase();
+        const input2_letter = document.getElementById("charInput2").value;
+
+        console.log("Input 1 (Letter):", input1_letter);
+        console.log("Input 2 (Number):", input2_letter);
+
+        if (input1_letter === "C" && input2_letter === "3") {
+          imgElement.src = "./images/C-3.PNG";
+          imgElement.style.display = "block";
+        } else if (input1_letter === "F" && input2_letter === "1") {
+          imgElement.src = "./images/F-1.PNG";
+          imgElement.style.display = "block";
+        } else if (input1_letter === "F" && input2_letter === "2") {
+          imgElement.src = "./images/F-2.PNG";
+          imgElement.style.display = "block";
+        } else if (input1_letter === "F" && input2_letter === "3") {
+          imgElement.src = "./images/F-3.PNG";
+          imgElement.style.display = "block";
+        } else if (input1_letter === "F" && input2_letter === "4") {
+          imgElement.src = "./images/F-4.PNG";
+          imgElement.style.display = "block";
+        } else if (input1_letter === "F" && input2_letter === "5") {
+          imgElement.src = "./images/F-5.PNG";
+          imgElement.style.display = "block";
+        } else if (input1_letter === "F" && input2_letter === "6") {
+          imgElement.src = "./images/F-6.PNG";
+          imgElement.style.display = "block";
+        } else if (input1_letter === "L" && input2_letter === "4") {
+          imgElement.src = "./images/L-4.PNG";
+          imgElement.style.display = "block";
+        } else if (input1_letter === "O" && input2_letter === "2") {
+          imgElement.src = "./images/O-2.PNG";
+          imgElement.style.display = "block";
+        } else if (input1_letter === "O" && input2_letter === "8") {
+          imgElement.src = "./images/O-8.PNG";
+          imgElement.style.display = "block";
+        } else if (input1_letter === "S" && input2_letter === "2") {
+          imgElement.src = "./images/S-2.PNG";
+          imgElement.style.display = "block";
+        } else {
+          alert("Sorry, we're out of stock");
+          imgElement.style.display = "none"; 
+        }
+      }
+    </script>
+  </body>
+</html>

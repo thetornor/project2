@@ -1,0 +1,130 @@
+body{
+    color: black;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url("images/zzz.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 50%;
+}
+    /* STYLE FOR THE INPUT FIELD */
+    #charInput {
+        width:10%;
+        border-radius: 3rem;
+        height: 40px;
+        background-color:rgb(101, 19, 63);
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        border-color: white;
+    }
+
+    /* STYLE FOR THE SUBMIT BUTTON */
+    #submitButton {
+        border-radius: 3rem;
+        height: 15%;
+        width: auto;
+        background-color: rgb(71, 172, 218);
+        color: white;
+        border-color: white;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    /* STYLE FOR THE IMAGE */
+    #displayedImage {
+        display: flex;
+        margin-left: 25%;
+        width: 30%;
+        height: 30%;
+        padding: 4rem;
+        margin-top: 5rem;
+    }
+    h1{
+        text-transform: uppercase;
+        color: rgb(71, 172, 218);
+        mix-blend-mode: difference;
+        font-family: "Barrio", serif;
+        font-weight: 400;
+        font-style: normal;
+        position: fixed;
+        bottom: 0;
+        left: 3%;
+        font-size: 50px;
+        rotate: 15deg;
+}
+h2{
+    text-transform: uppercase;
+    color: rgb(243, 124, 5);
+    mix-blend-mode: difference;
+    font-family: "Barrio", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: fixed;
+   top: 40%;
+    right: 3%;
+    font-size: 50px;
+    rotate: -20deg;
+}
+h3{
+    text-transform: uppercase;
+    color: rgb(31, 126, 18);
+    mix-blend-mode: difference;
+    font-family: "Barrio", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: fixed;
+   top: 15%;
+   left: 3%;
+    font-size: 50px;
+    rotate: -10deg;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        background-image: url("images/zz.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100%;
+
+}
+#charInput {
+    width:10%;
+    border-radius: 3rem;
+    height: 40px;
+    background-color:rgb(101, 19, 63);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-color: white;
+    }
+
+    /* STYLE FOR THE SUBMIT BUTTON */
+    #submitButton {
+        border-radius: 3rem;
+        height: 15%;
+        width: auto;
+        background-color: rgb(71, 172, 218);
+        color: white;
+        border-color: white;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+    /* STYLE FOR THE IMAGE */
+    #displayedImage {
+        display: flex;
+        margin-left: 30%;
+        width: 30%;
+        height: 30%;
+        padding: 4rem;
+        margin-top: 0rem;
+    }
+}
