@@ -5,7 +5,7 @@ body{
     position: absolute;
     margin: 0;
     padding: 0;
-    background-color: rgb(237, 245, 253);
+    background-color: rgb(239, 125, 32);
     font-family: sans-serif;
     scrollbar-color: rgb(205, 230, 106) #f181a6;
 }
@@ -142,4 +142,88 @@ body{
     margin-top: 20%;
     z-index: 4;
 }
+
+@media screen and (max-width: 700px) {
+  .split {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-pane {
+    width: 100%;
+    height:25%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(8, 63, 192);
+    padding: 10px;
+  }
+
+  .fishStock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .fish {
+    width: 200px; 
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .fish:hover {
+    width: 220px;
+  }
+  .right-pane {
+    width: 100%;
+    height: auto;
+    background-color: rgb(239, 125, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+  }
+
+  
+  #plate {
+    width: 50%;
+    position: fixed;
+    top: 54%;
+    right: 20%;
+  }
+
+  .input {
+    position: relative;
+    top: 0;
+    text-align: center;
+  }
+
+  #charInput1,
+  #charInput2 {
+    width: 20%;
+    font-size: 20px;
+  }
+
+  #submitButton {
+    font-size: 20px;
+  }
+
+  #displayedImage {
+    width: 40%;
+    align-self: center;
+    position: relative;
+    top: 45%;
+    right: 10%;
+   
+  }
+}
+
+
 
